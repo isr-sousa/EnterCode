@@ -1,4 +1,4 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -54,32 +54,113 @@ section {
 }
 
 
-/* seção inicio */
+/* SEÇÃO INÍCIO */
 #inicio {
-    text-align: center;
+    display: flex;
+    gap: 40px;
+    padding-top: 140px; 
     background-image: url(assets/background.jpeg);
     background-position: center 80px;
 }
-#inicio h1 {
-    padding-top: 20px;
-    font-size: 60px;
-    color: #000000;
+#bloco-texto {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.15); 
+    border: 1px solid rgba(63, 20, 20, 0.3); 
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    border-radius: 20px;
+    max-width: 650px;
 }
+#inicio h1 {
+    font-size: 50px;
+    color: #080808;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+
 #inicio strong {
     color: #000000;
 }
+
 #inicio p {
-    font-size: 25px;
+    font-size: 18px;
     color: #000000;
+    line-height: 1.5;
 }
-#inicio img {
-    width: 50vh;
-}
-/* seção solução */
-#solucoes {
-    background-color: #ffffff;
+#inicio img{
+    width: 600px;
+    border: 1px solid rgba(63, 20, 20, 0.3);
+    border-radius: 20px;
 }
 
+/* SEÇÃO SOLUÇÃO */
+#solucoes {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 80px 40px;
+}
+
+#solucoes h1 {
+    color: #000000;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+#solucoes .sub-solucoes {
+    color: #555555;
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+#solucoes-c {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 1200px;
+    flex-wrap: wrap;
+}
+
+.card-solucao {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-solucao:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-solucao ion-icon {
+    font-size: 48px;
+    color: #23c49e; 
+    margin-bottom: 20px;
+}
+
+.card-solucao h3 {
+    color: #1e293b;
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card-solucao p {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.5;
+}
 #tecnologia {
     background-color: #e2e8f0;
 }
