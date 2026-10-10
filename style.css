@@ -106,7 +106,7 @@ section {
 
 #inicio p {
     font-size: 18px;
-    color: #000000; /* Tom claro para legibilidade */
+    color: #000000;
     line-height: 1.5;
 }
 
@@ -125,7 +125,7 @@ section {
     align-items: center;
     text-align: center;
     padding: 80px 40px;
-    min-height: auto; /* CORRIGIDO: Evita que fique com 100vh em branco excessivo */
+    min-height: auto;
 }
 
 #solucoes h1 {
@@ -184,9 +184,13 @@ section {
     font-size: 15px;
     line-height: 1.5;
 }
-
+/* SEÇÃO TECNOLOGIA */
 #tecnologia {
-    background-color: #e2e8f0;
+    padding-top: 140px;
+    background-color: #0f69dd;
+}
+#container{
+    border: 1px solid black;
 }
 
 /* RESPONSIVIDADE */
