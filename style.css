@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+body *{
+    font-family: "Inter", sans-serif;
+    color: #000000;
+}
+
+#links {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: rgba(255, 255,255, 0.2); 
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    max-height: 50vh;
+}
+span{
+    color: #23c49e;
+}
+#logo {
+    display: flex;
+}
+#logo p{
+    pointer-events: none;
+}
+#logo img {
+    width: 40px;
+    height: 40px;
+}
+.menu-l {
+    display: flex;
+    gap: 30px;
+}
+#links a{
+    text-decoration: none;
+}
+#links a:hover {
+    color: #23c49e;
+}
+section {
+    min-height: 100vh;      
+    padding: 60px 40px;
+    box-sizing: border-box;
+}
+
+
+/* seção inicio */
+#inicio {
+    text-align: center;
+    background-image: url(assets/background.jpeg);
+    background-position: center 80px;
+}
+#inicio h1 {
+    padding-top: 20px;
+    font-size: 60px;
+    color: #000000;
+}
+#inicio strong {
+    color: #000000;
+}
+#inicio p {
+    font-size: 25px;
+    color: #000000;
+}
+#inicio img {
+    width: 50vh;
+}
+/* seção solução */
+#solucoes {
+    background-color: #ffffff;
+}
+
+#tecnologia {
+    background-color: #e2e8f0;
+}
