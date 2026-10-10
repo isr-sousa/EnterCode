@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,20 +14,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav id="links">
-        <div id="logo">
-            <img src="assets/logo.png" alt="logo da nav bar">
-            <p>Enter <br><span>Code</span></p>
-        </div>
-        <div class="menu-l">
-            <a href="#inicio">Início</a>
-            <a href="#solucoes">Soluções</a>
-            <a href="#tecnologia">Tecnologia</a>
-            <a href="#tecnologia">Para <br>escolas</a>
-            <a href="#sobre">Sobre <br>nós</a>
-        </div>
+    <nav>
+        <ul class="sidebar">
+             <li onclick="hideSider()"><a href="javascript:void(0)"><ion-icon name="close-outline"></ion-icon></a></li>
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#solucoes">Soluções</a></li>
+            <li><a href="#tecnologia">Tecnologia</a></li>
+            <li><a href="#tecnologia">Para <br>escolas</a></li>
+            <li><a href="#sobre">Sobre <br>nós</a></li>
+        </ul>
+        <ul>
+            <div id="logo">
+                <img src="assets/logo.png" alt="logo">
+                <p>Enter <span>Code</span></p>
+            </div>
+            <li class="hideOnMobile"><a href="#inicio">Início</a></li>
+            <li class="hideOnMobile"><a href="#solucoes">Soluções</a></li>
+            <li class="hideOnMobile"><a href="#tecnologia">Tecnologia</a></li>
+            <li class="hideOnMobile"><a href="#tecnologia">Para <br>escolas</a></li>
+            <li class="hideOnMobile"><a href="#sobre">Sobre <br>nós</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="javascript:void(0)"><ion-icon name="menu-outline"></ion-icon></a></li>
+        </ul>
     </nav>
-
     <main>
         <section id="inicio">
             
@@ -39,7 +47,7 @@
 
             <img id="imagem-hero" src="assets/exemplo.jpeg" alt="Ilustração do Acesso Biométrico">
         </section>
-
+        </main>
        <section id="solucoes">
     <h1>Tecnologia <span>Inteligente</span> para Proteção Escolar</h1>
     <p class="sub-solucoes">Desenvolvido sob medida para escolas, colégios e universidades que priorizam a segurança e a agilidade.</p>
@@ -71,8 +79,19 @@
                 <p>oi</p>
             </div>
         </section>
-    </main>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+<script>
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        document.querySelector('.menu-button').style.display = 'none';
+    }
+    function hideSider(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        document.querySelector('.menu-button').style.display = 'block';
+    }
+</script>
 </html>
