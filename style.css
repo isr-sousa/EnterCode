@@ -274,7 +274,7 @@ section {
     margin-bottom: 30px;
 }
 
-/* Estilo da Lista Esquerda (Ícones) */
+
 .vantagens {
     list-style: none;
     padding: 0;
@@ -320,14 +320,14 @@ section {
     padding: 0;
     display: flex;
     flex-direction: column;
-    gap: 12px; /* Reduzido de 20px para 12px para aproximar os blocos */
+    gap: 12px; /
 }
 
 .vantagens-numeradas li {
     background-color: #ffffff;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-    padding: 16px 20px; /* Reduzido o padding interno para não ficar muito alto */
+    padding: 16px 20px; 
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -351,7 +351,7 @@ section {
 }
 
 .conteudo-texto h3 {
-    font-size: 16px; /* Ajustado para acompanhar o tamanho da esquerda */
+    font-size: 16px; 
     color: #0f172a;
     margin-bottom: 4px;
 }
@@ -361,6 +361,69 @@ section {
     font-size: 13.5px;
     line-height: 1.4;
     margin: 0;
+}
+
+
+/* SEÇÃO SOBRE NÓS */
+#sobre {
+    padding-top: 140px;
+    background-image: url(assets/background-1.jpeg);
+    background-position: center;background-size: cover;
+    background-repeat: no-repeat;
+}
+#sobre h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+#cards-equipe {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap; 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.card-individual {
+    background-color: rgba(255, 255, 255, 0.90);
+    border: 1px solid #e2e8f0;
+    backdrop-filter: blur(14px);
+    border-radius: 16px;
+    padding: 30px 20px;
+    width: 280px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-individual:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.card-individual img {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%; 
+    object-fit: cover;
+    margin-bottom: 16px;
+    border: 3px solid #23c49e;
+}
+
+.card-individual h2 {
+    font-size: 20px;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.card-individual p {
+    font-size: 14px;
+    color: #64748b;
+    line-height: 1.5;
 }
 /* RESPONSIVIDADE */
 
@@ -424,12 +487,12 @@ section {
     }
 
     #container {
-        flex-direction: column; /* Coloca os cards um por baixo do outro */
+        flex-direction: column; 
         gap: 24px;
     }
 
     .cards {
-        width: 100%; /* Ocupa a largura total disponível */
+        width: 100%; 
         padding: 30px 24px;
     }
 
