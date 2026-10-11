@@ -75,24 +75,93 @@
 </section>
 
         <section id="tecnologia">
-            <div id="container">
-                <p>oi</p>
-            </div>
-        </section>
+            <h1>Porque escolher a Enter <span>Code</span>?</h1>
+    <div id="container">
+        <div class="cards" id="card-t">
+            <h2>Arquitetura segura e Escalável para <span>Escolas</span> Modernas</h2>
+            <p class="card-descricao">Nossa plataforma combina hardware biométrico de alta precisão com um software em nuvem robusto, garantindo que os dados dos alunos estejam sempre protegidos com criptografia de ponta a ponta.</p>
+            
+            <ul class="vantagens">
+                <li>
+                    <div class="vantagem-header">
+                        <ion-icon name="flash-outline"></ion-icon>
+                        <h3>Leitura Instantânea</h3>
+                    </div>
+                    <p>Algoritmo otimizado para identificar digitais mesmo com pequenos desgastes ou sujeira.</p>
+                </li>
+                <li>
+                    <div class="vantagem-header">
+                        <ion-icon name="cloudy-outline"></ion-icon>
+                        <h3>Sincronizando em Nuvem</h3>
+                    </div>
+                    <p>Acesso imediato para diretores e coordenadores acompanharem a frequência de qualquer lugar.</p>
+                </li>
+                <li>
+                    <div class="vantagem-header">
+                        <ion-icon name="phone-portrait-outline"></ion-icon>
+                        <h3>Aplicativo Dedicado aos Pais</h3>
+                    </div>
+                    <p>Receba alertas push instantâneos quando seu filho entrar ou sair da instituição.</p>
+                </li>
+                <li>
+                    <div class="vantagem-header">
+                         <ion-icon name="stats-chart-outline"></ion-icon>
+                         <h3>Relatórios de Frequência</h3>
+                    </div>
+                      <p>Exporte dados detalhados de presença e ausência com poucos cliques para reuniões pedagógicas e exigências legais.</p>
+                </li>
+            </ul>
+        </div>
+
+        
+        <div class="cards" id="card-e">
+            <h2>Por que Diretores e Escolas Escolhem a Enter<span>Code</span>?</h2>
+            <p class="card-descricao">Transforme a gestão da sua escola com tecnologia que traz paz de espírito para gestores, professores e pais.</p>
+            
+            <ul class="vantagens-numeradas">
+                <li>
+                    <div class="numero-box">01</div>
+                    <div class="conteudo-texto">
+                        <h3>Tranquilidade para os Pais</h3>
+                        <p>Elimine a preocupação sobre o paradeiro dos filhos. O aviso de chegada gera confiança imediata e fideliza as famílias.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="numero-box">02</div>
+                    <div class="conteudo-texto">
+                        <h3>Redução de Fraudes e Evasão</h3>
+                        <p>Nenhum aluno consegue entrar sem registro ou burlar a chamada escolar. O controle biométrico garante precisão legal.</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="numero-box">03</div>
+                    <div class="conteudo-texto">
+                        <h3>Suporte Técnico Dedicado</h3>
+                        <p>Equipe especializada pronta para auxiliar na instalação, treinamento de funcionários e manutenção preventiva dos terminais.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
 <script>
-   function showSidebar(){
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'flex';
-    document.body.classList.add('menu-aberto'); // Adiciona a classe que esconde a nav
-}
-
-function hideSider(){
-    const sidebar = document.querySelector('.sidebar');
-    sidebar.style.display = 'none';
-    document.body.classList.remove('menu-aberto'); // Remove a classe e devolve o controle ao CSS
-}
+    function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+        document.querySelector('.menu-button').style.display = 'none';
+    }
+    function hideSider(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+        document.querySelector('.menu-button').style.display = 'block';
+    }
+    document.querySelectorAll('.sidebar a').forEach(link => {
+        link.addEventListener('click', () => {
+            hideSider();
+        });
+    });
 </script>
 </html>

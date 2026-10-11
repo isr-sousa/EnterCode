@@ -211,7 +211,7 @@ section {
 }
 
 .card-solucao h3 {
-    color: #1e293b;
+    color: #000000;
     font-size: 20px;
     margin-bottom: 12px;
 }
@@ -221,15 +221,147 @@ section {
     font-size: 15px;
     line-height: 1.5;
 }
+
+
 /* SEÇÃO TECNOLOGIA */
 #tecnologia {
-    padding-top: 140px;
-    background-color: #0f69dd;
+    padding: 120px 20px 60px 20px;
+    background-color: #ffffff;
 }
-#container{
-    border: 1px solid black;
+#tecnologia h1 {
+    text-align: center;
+    color: #000000;
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+#container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 30px;
 }
 
+.cards {
+    flex: 1;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 40px 30px;
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cards:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.cards h2 {
+    color: #0f172a;
+    font-size: 24px;
+    margin-bottom: 16px;
+    line-height: 1.3;
+}
+
+.cards h2 span {
+    color: #23c49e; 
+}
+
+.card-descricao {
+    color: #64748b;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Estilo da Lista Esquerda (Ícones) */
+.vantagens {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.vantagens li {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.vantagem-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.vantagens ion-icon {
+    font-size: 28px;
+    color: #23c49e;
+    flex-shrink: 0;
+}
+
+.vantagens h3 {
+    font-size: 18px;
+    color: #0f172a;
+    margin: 0;
+}
+
+.vantagens p {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.vantagens-numeradas {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px; /* Reduzido de 20px para 12px para aproximar os blocos */
+}
+
+.vantagens-numeradas li {
+    background-color: #ffffff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 16px 20px; /* Reduzido o padding interno para não ficar muito alto */
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    transition: all 0.2s ease;
+}
+
+.vantagens-numeradas li:hover {
+    border-color: #23c49e;
+    box-shadow: 0 4px 12px rgba(35, 196, 158, 0.08);
+}
+
+.numero-box {
+    display: inline-block;
+    background-color: rgba(35, 196, 158, 0.12);
+    color: #23c49e;
+    font-weight: bold;
+    font-size: 13px;
+    padding: 4px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.conteudo-texto h3 {
+    font-size: 16px; /* Ajustado para acompanhar o tamanho da esquerda */
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.conteudo-texto p {
+    color: #64748b;
+    font-size: 13.5px;
+    line-height: 1.4;
+    margin: 0;
+}
 /* RESPONSIVIDADE */
 
 @media (max-width: 1024px) {
