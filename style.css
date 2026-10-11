@@ -417,3 +417,88 @@ section {
         width: 100%;
     }
 }
+
+@media (max-width: 992px) {
+    #tecnologia {
+        padding: 80px 20px 40px 20px;
+    }
+
+    #container {
+        flex-direction: column; /* Coloca os cards um por baixo do outro */
+        gap: 24px;
+    }
+
+    .cards {
+        width: 100%; /* Ocupa a largura total disponível */
+        padding: 30px 24px;
+    }
+
+    #tecnologia > h1 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 600px) {
+    #tecnologia {
+        padding: 60px 16px 30px 16px;
+    }
+
+    #tecnologia > h1 {
+        font-size: 22px;
+        text-align: center;
+        margin-bottom: 24px;
+    }
+
+    .cards {
+        padding: 24px 18px;
+        border-radius: 12px;
+    }
+
+    .cards h2 {
+        font-size: 20px;
+    }
+
+    .card-descricao {
+        font-size: 14px;
+        margin-bottom: 20px;
+    }
+
+    .vantagens {
+        gap: 18px;
+    }
+
+    .vantagens h3 {
+        font-size: 16px;
+    }
+
+    .vantagens p {
+        padding-left: 0; 
+        font-size: 13.5px;
+    }
+
+    .vantagem-header {
+        gap: 10px;
+    }
+
+    .vantagens ion-icon {
+        font-size: 24px;
+    }
+
+    
+    .vantagens-numeradas {
+        gap: 10px;
+    }
+
+    .vantagens-numeradas li {
+        padding: 14px 16px;
+    }
+
+    .conteudo-texto h3 {
+        font-size: 15px;
+    }
+
+    .conteudo-texto p {
+        font-size: 13px;
+    }
+}
